@@ -2,10 +2,10 @@ matrix:
   - name: Markdown-And-Html
     aspell:
       lang: en
-      dictionary:
-        wordlists:
-          - wordlists.txt
-        encoding: utf-8
+    dictionary:
+      wordlists:
+        - wordlists.txt
+      encoding: utf-8
     pipeline:
       - pyspelling.filters.markdown:
       - pyspelling.filters.html:
