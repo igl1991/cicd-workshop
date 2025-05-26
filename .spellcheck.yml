@@ -1,19 +1,19 @@
 matrix:
-  - name: Markdown-And-Html
-    aspell:
-      lang: en
-    dictionary:
-      wordlists:
-        - wordlists.txt
-      encoding: utf-8
-    pipeline:
-      - pyspelling.filters.markdown:
-      - pyspelling.filters.html:
-        comments: false
-        ignores:
-          - code
-          - pre
-    sources: 
-      - '**/*.md'
-      - '**/*.hmtl'
-    default_encoding: utf-8
+- name: Markdown-And-Html
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+      - wordlists.txt
+    encoding: utf-8
+  pipeline:
+  - pyspelling.filters.markdown:
+  - pyspelling.filters.html:
+      comments: false
+      ignores:
+      - code
+      - pre
+  sources:
+  - '**/*.md'
+  - '**/*.html'
+  default_encoding: utf-8
